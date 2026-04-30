@@ -1,5 +1,9 @@
 class Solution {
     public int solution(int slice, int n) {
-        return (int) Math.ceil((double) n / slice);
+        for(int i = 1; ; i++) {
+            if (slice*i >= n) {
+                return i;
+            }
+        }
     }
 }
